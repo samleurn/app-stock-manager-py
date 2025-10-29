@@ -3,6 +3,6 @@
 Este é um desafio pessoal.
 
 #### Techs
-<p>
-  <img width="30" src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/python/python-original.svg">
-</p>
+
+![Python](https://img.shields.io/badge/python-306998?style=for-the-badge&logo=python&logoColor=FFD100)
+![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
