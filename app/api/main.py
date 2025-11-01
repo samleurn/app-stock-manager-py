@@ -1,4 +1,5 @@
-from flask import Flask
+from flask import Flask, request
+from app.db.database import Query
 
 app = Flask(__name__)
 
@@ -7,8 +8,17 @@ app = Flask(__name__)
 def health():
     return 'Ok'
 
-@app.route('/api/home')
-def home():
-    return '200'
 
-app.run(debug=True)
+@app.route('/api/')
+def home():
+    return 'Welcome to the Product Manager API'
+
+
+@app.route('/api/products', methods=['GET'])
+def get_products():
+    data = Query("SELECT * FROM products").query()
+    return data
+
+
+if __name__ == '__main__':
+    app.run(debug=True)

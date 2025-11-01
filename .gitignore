@@ -6,3 +6,4 @@ TODO.md
 
 venv/
 config/
+__pycache__/
