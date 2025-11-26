@@ -32,7 +32,7 @@ Content-Type: application/json
     ",
     "quantity" :"0",
     "price" :"5999.90",
-    "brand":"Lenovo"
+    "brand":"Lenovo",
 }
 
 ### POST BATCH
