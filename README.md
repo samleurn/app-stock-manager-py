@@ -5,7 +5,13 @@ App de gerenciamento de estoque em python, feito para uma ativadade em python da
 ## Requirements
 
 ```
+# Instalation Guide
 pip install "uvicorn[standard]" "reactpy[fastapi]" "fastapi[standard]"
+```
+
+``` 
+# To init the api
+uvicorn app.api.server:app --reload
 ```
 
 ### Techs
