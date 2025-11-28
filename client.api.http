@@ -5,12 +5,25 @@ GET http://127.0.0.1:3333/api/
 GET http://127.0.0.1:3333/api/products
 
 ### GET API PRODUCT
-GET http://127.0.0.1:3333/api/products/khlkl
+GET http://127.0.0.1:3333/api/products/0000-0000-0000-0000
 
 ### POST API PRODUCT
-POST http://127.0.0.1:3333/api/products/
+POST http://127.0.0.1:3333/api/product/
 Content-Type: application/json
 
-{
-    
+{   
+    "name" : "Lenovo Ideapad slim 3",
+    "specs" : "{
+        'cpu':'i5 13420h',
+        'gpu':'uhd grafics',
+        'display':'ips lcd' 
+        }",
+    "brand_id" : "1",
+    "category_id" : "1",
 }
+
+### PUT API PRODUCT
+POST http://127.0.0.1:3333/api/product/0000-0000-0000-0000
+
+### DELETE API PRODUCT
+POST http://127.0.0.1:3333/api/product/0000-0000-0000-0000

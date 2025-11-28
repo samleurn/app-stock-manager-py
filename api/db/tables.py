@@ -13,6 +13,8 @@ CREATE TABLE IF NOT EXISTS product (
     code UUID NOT NULL,
     name VARCHAR(50) NOT NULL,
     specs TEXT NOT NULL,
+    brand_id INT NOT NULL,
+    category_id INT NOT NULL,
     created_at TIMESTAMP NOT NULL,
     modified_at TIMESTAMP NOT NULL
 )

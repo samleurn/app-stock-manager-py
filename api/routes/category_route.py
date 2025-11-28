@@ -1,11 +1,11 @@
 from fastapi import APIRouter
-from ..controllers.controller import Controller
+from ..controller.category_controller import CategoryController
 
-home = APIRouter()
+category = APIRouter()
 
-homeController = Controller()
+ctc = CategoryController()
 
 
-@home.get("/")
-def get_home():
-    return homeController.home_controller()
+@category.get("/")
+def get_category():
+    return ctc.category_controller()

@@ -1,11 +1,11 @@
 from fastapi import APIRouter
-from ..controllers.controller import Controller
+from ..controller.brand_controller import BrandController
 
 home = APIRouter()
 
-homeController = Controller()
+bnc = BrandController()
 
 
 @home.get("/")
 def get_home():
-    return homeController.home_controller()
+    return bnc.home_controller()

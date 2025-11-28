@@ -1,16 +1,31 @@
 from fastapi import APIRouter
-from ..controllers.controller import Controller
+from ..controller.product_controller import ProductController
 
 product = APIRouter(prefix="/products")
 
-productController = Controller()
+pc = ProductController()
 
 
 @product.get("/")
 def get_products():
-    return productController.product_controller("/getall")
+    return pc.getProducts()
 
 
 @product.get("/{uuid}")
 def get_product(uuid):
-    return productController.product_controller("/getone", uuid)
+    return pc.getProductByUuid(uuid)
+
+
+@product.post("/")
+def post_product():
+    return pc.postProduct()
+
+
+@product.put("/{uuid}")
+def put_product(uuid):
+    return pc.putProduct(uuid)
+
+
+@product.delete("/{uuid}")
+def delete_product(uuid):
+    return pc.deleteProduct(uuid)

@@ -1,11 +1,11 @@
 from fastapi import APIRouter
-from ..controllers.controller import Controller
+from ..controller.home_controller import HomeController
 
 home = APIRouter()
 
-homeController = Controller()
+hc = HomeController()
 
 
 @home.get("/")
 def get_home():
-    return homeController.home_controller()
+    return hc.getHome()

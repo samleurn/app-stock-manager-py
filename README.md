@@ -9,13 +9,19 @@ Professor: Welliton Cunha
 ## Requirements
 
 ```
+# Enviroment Ambient
+python venv .venv
+.venv/bin/active
+```
+
+```
 # Instalation Guide
 pip install "uvicorn[standard]" "reactpy[fastapi]" "fastapi[standard]"
 ```
 
 ```
-# To init the api
-uvicorn public.spa:app --reload --port 5050
+# To init the client
+uvicorn client.spa:app --reload --port 5050
 ```
 
 ```
